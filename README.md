@@ -1,10 +1,10 @@
 # Carrinho controlado via Wi-Fi
-> Alunos: Afonso Salvador de Magalhães, Diogo Delazare Brandão e Thamya Vieira Hashimoto Donadia 
-Mostra Projeto Integrador em Computação I - 2021.2
+> Alunos: Afonso Salvador de Magalhães, Diogo Delazare Brandão e Thamya Vieira Hashimoto Donadia   
+Mostra Projeto Integrador em Computação I - 2021.2  
 Universidade Federal do Espírito Santo (UFES) 
 
 ## Descrição do projeto 
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 ## Materiais utilizados 
 **1. Componentes para a montagem física**
@@ -29,14 +29,14 @@ Universidade Federal do Espírito Santo (UFES)
 
 
 **2. Montagem física**  
-   O sistema foi montado por cima da base do chassi de um antigo carrinho de brinquedo, aproveitando seus eixos de roda e seu interruptor para desligá-lo. O motor DC é colocado na parte de trás do carrinho e conectado ao eixo traseiro, já o servo motor é responsável pela movimentação direcional do eixo dianteiro. O motor DC está conectado diretamente ao Driver Ponte H, que recebe as ordens do ESP pelos pinos IN3, IN4 e ENB.(TERMINAR)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O sistema foi montado por cima da base do chassi de um antigo carrinho de brinquedo, aproveitando seus eixos de roda e seu interruptor para desligá-lo. O motor DC é colocado na parte de trás do carrinho e conectado ao eixo traseiro, já o servo motor é responsável pela movimentação direcional do eixo dianteiro. O motor DC está conectado diretamente ao Driver Ponte H, que recebe as ordens do ESP pelos pinos IN3, IN4 e ENB.(TERMINAR)
 
 
 ## Software - Explicação do código  
-   A priori, foi necessário configurar a IDE do Arduino para programar o ESP8266
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A priori, foi necessário configurar a IDE do Arduino para programar o ESP8266
 
 **1. Código para controlar os motores**  
-   No início do código, foram definidas constantes para nomear os pinos que estão conectados o servo motor e o motor CC/DC, a velocidade de atuação do motor e a angulação de giro do servo. Após isso, temos os comandos do ESP para Driver, a fim de controlar o motor CC/DC. Para isso foi utilizada uma tabela lógica que define o sinal digital dos pinos IN3 e IN4, de modo que o carrinho se movimente para frente, para trás ou fique parado. As permutações utilizadas no código e seus resultados são demonstrados a seguir. Além disso, foi definida uma velocidade padrão para a movimentação do carrinho.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No início do código, foram definidas constantes para nomear os pinos que estão conectados o servo motor e o motor CC/DC, a velocidade de atuação do motor e a angulação de giro do servo. Após isso, temos os comandos do ESP para Driver, a fim de controlar o motor CC/DC. Para isso foi utilizada uma tabela lógica que define o sinal digital dos pinos IN3 e IN4, de modo que o carrinho se movimente para frente, para trás ou fique parado. As permutações utilizadas no código e seus resultados são demonstrados a seguir. Além disso, foi definida uma velocidade padrão para a movimentação do carrinho.  
 
 |  IN3  |  IN4  | Resultado |
 |-------|-------|-----------|
@@ -44,10 +44,10 @@ Universidade Federal do Espírito Santo (UFES)
 |  Low  |  High | Trás      |
 |  Low  |  Low  | Parado
 
-   Para fazer o carrinho virar para um lado ou outro, foi utilizada a biblioteca Servo.h para controlar o servo motor. Desse modo, foi definida uma angulação base para ele virar para um lado e o oposto para virar para o outro lado. Por fim, utilizou-se a função da própria biblioteca para aplicar a angulação de giro no servo motor.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para fazer o carrinho virar para um lado ou outro, foi utilizada a biblioteca Servo.h para controlar o servo motor. Desse modo, foi definida uma angulação base para ele virar para um lado e o oposto para virar para o outro lado. Por fim, utilizou-se a função da própria biblioteca para aplicar a angulação de giro no servo motor.
 
 **2. Conexão Wi-Fi**  
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
 
