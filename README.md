@@ -44,7 +44,7 @@ Universidade Federal do Espírito Santo (UFES)
 |  Low  |  High | Trás      |
 |  Low  |  Low  | Parado
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para fazer o carrinho virar para um lado ou outro, foi utilizada a biblioteca Servo.h para controlar o servo motor. Desse modo, foi definida uma angulação base para ele virar para um lado e o oposto para virar para o outro lado. Por fim, utilizou-se a função da própria biblioteca para aplicar a angulação de giro no servo motor.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para fazer o carrinho virar para um lado ou outro, foi utilizada a biblioteca ```Servo.h``` para controlar o servo motor. Desse modo, foi definida uma angulação base para ele virar para um lado e o oposto para virar para o outro lado. Por fim, utilizou-se a função da própria biblioteca para aplicar a angulação de giro no servo motor.
 
 **2. Conexão Wi-Fi**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
