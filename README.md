@@ -22,7 +22,7 @@ Universidade Federal do Espírito Santo (UFES)
     
 ## Hardware - Montagem do circuito 
 **1. Esquemático e explicação das conexões**  
-: Aqui temos as conexões realizadas para montar o carrinho. O motor CC/DC é conectado ao driver e utilizado para movimentar o carrinho para frente ou para trás. Os pinos de input (IN1, IN2, IN3, IN4) do driver são conectados a um pino digital do ESP e utilizados para determinar a direção de movimento do motor CC/DC. Já os pinos ENABLE (ENA, ENB) são conectados a pinos PWM do ESP para controlar a velocidade de rotação do motor. Por outro lado, o servo motor foi conectado a um pino PWM do ESP, de modo que é possível controlar a angulação de rotação do motor. (TERMINAR)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aqui temos as conexões realizadas para montar o carrinho. O motor CC/DC é conectado ao driver e utilizado para movimentar o carrinho para frente ou para trás. Os pinos de input (IN1, IN2, IN3, IN4) do driver são conectados a um pino digital do ESP e utilizados para determinar a direção de movimento do motor CC/DC. Já os pinos ENABLE (ENA, ENB) são conectados a pinos PWM do ESP para controlar a velocidade de rotação do motor. Por outro lado, o servo motor foi conectado a um pino PWM do ESP, de modo que é possível controlar a angulação de rotação do motor. (TERMINAR)
 
 | Driver | L298N |  
 |--------|-------|  
