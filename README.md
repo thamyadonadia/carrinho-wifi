@@ -33,7 +33,7 @@ Universidade Federal do Espírito Santo (UFES)
 
 
 ## Software - Explicação do código  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A priori, foi necessário configurar a IDE do Arduino para programar o ESP8266
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A priori, foi necessário configurar a IDE do Arduino para programar o ESP8266.
 
 **1. Código para controlar os motores**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No início do código, foram definidas constantes para nomear os pinos que estão conectados o servo motor e o motor CC/DC, a velocidade de atuação do motor e a angulação de giro do servo. Após isso, temos os comandos do ESP para Driver, a fim de controlar o motor CC/DC. Para isso foi utilizada uma tabela lógica que define o sinal digital dos pinos IN3 e IN4, de modo que o carrinho se movimente para frente, para trás ou fique parado. As permutações utilizadas no código e seus resultados são demonstrados a seguir. Além disso, foi definida uma velocidade padrão para a movimentação do carrinho.  
