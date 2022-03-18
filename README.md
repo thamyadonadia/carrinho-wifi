@@ -23,9 +23,11 @@ Universidade Federal do Espírito Santo (UFES)
 ## Hardware - Montagem do circuito 
 **1. Esquemático e explicação das conexões**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aqui temos as conexões realizadas para montar o carrinho. O motor CC/DC é conectado ao driver e utilizado para movimentar o carrinho para frente ou para trás.
-Os pinos de input (IN1, IN2, IN3, IN4) do driver são conectados a pinos digitais do ESP e utilizados para determinar as direções de movimento dos motores CC/DC. Já os pinos ENABLE (ENA, ENB) são conectados a pinos PWM do ESP para controlar a velocidade de rotação dos motores.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Os pinos de input (IN1, IN2, IN3, IN4) do driver são conectados a pinos digitais do ESP e utilizados para determinar as direções de movimento dos motores CC/DC. Já os pinos ENABLE (ENA, ENB) são conectados a pinos PWM do ESP para controlar a velocidade de rotação dos motores.
 Nosso projeto utiliza apenas um motor CC, controlado pela interface do motor B do driver (IN3, IN4, ENB).
-Por outro lado, o servo motor foi conectado a um pino PWM do ESP, de modo que é possível controlar a angulação das rodas através de um pivô.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Por outro lado, o servo motor foi conectado a um pino PWM do ESP, de modo que é possível controlar a angulação das rodas através de um pivô.
 
 | Driver | L298N |  
 |--------|-------|  
@@ -44,7 +46,7 @@ Ambas as placas foram presas ao chassi do carrinho através de parafusos.
 
 ## Software - Explicação do código  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A priori, foi necessário configurar a IDE do Arduino para programar o ESP8266. Isso foi feito adicionando a URL "http://arduino.esp8266.com/stable/package_esp8266com_index.json" ao campo "URLs Adicionais para Gerenciadores de Placas" na janela de preferências do Arduino IDE (Arquivo -> Preferências / Ctrl + ,) e escolhendo a placa correta no menu de Ferramentas (Ferramentas -> Placa -> ESP8266 Boards -> NodeMCU 1.0 (ESP-12E Module)).
-Além disso foi necessário instalar a biblioteca ```Servo.h``` para facilitar o controle do servomotor e as bibliotecas ```ESP8266WiFi.h``` e ```ESP8266WebServer.h``` para configurar o módulo wi-fi da placa ESP.
+Além disso, foi necessário instalar a biblioteca ```Servo.h``` para facilitar o controle do servomotor e as bibliotecas ```ESP8266WiFi.h``` e ```ESP8266WebServer.h``` para configurar o módulo wi-fi da placa ESP.
 
 **1. Código para controlar os motores**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No início do código, foram definidas constantes para nomear os pinos aos quais estão conectados o servo motor e o motor CC/DC, a velocidade de atuação do motor e a angulação de giro do servo.
