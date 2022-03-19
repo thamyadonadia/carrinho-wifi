@@ -19,14 +19,11 @@ Universidade Federal do Espírito Santo (UFES)
 
 **2. Softwares**
    - Arduino IDE
+   - Fritzing
     
 ## Hardware - Montagem do circuito 
 **1. Esquemático e explicação das conexões**  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aqui temos as conexões realizadas para montar o carrinho. O motor CC/DC é conectado ao driver e utilizado para movimentar o carrinho para frente ou para trás.
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Os pinos de input (IN1, IN2, IN3, IN4) do driver são conectados a pinos digitais do ESP e utilizados para determinar as direções de movimento dos motores CC/DC. Já os pinos ENABLE (ENA, ENB) são conectados a pinos PWM do ESP para controlar a velocidade de rotação dos motores.
-Nosso projeto utiliza apenas um motor CC, controlado pela interface do motor B do driver (IN3, IN4, ENB).
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aqui (BOTAR LINK PARA A PASTA) temos as conexões realizadas para montar o carrinho. O motor CC/DC é conectado ao driver e utilizado para movimentar o carrinho para frente ou para trás.Os pinos de input (IN1, IN2, IN3, IN4) do driver são conectados a pinos digitais do ESP e utilizados para determinar as direções de movimento dos motores CC/DC. Já os pinos ENABLE (ENA, ENB) são conectados a pinos PWM do ESP para controlar a velocidade de rotação dos motores. Nosso projeto utiliza apenas um motor CC, controlado pela interface do motor B do driver (IN3, IN4, ENB).
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Por outro lado, o servo motor foi conectado a um pino PWM do ESP, de modo que é possível controlar a angulação das rodas através de um pivô.
 
 | Driver | L298N |  
@@ -34,10 +31,8 @@ Nosso projeto utiliza apenas um motor CC, controlado pela interface do motor B d
 
 
 **2. Montagem física**  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O sistema foi montado por cima da base do chassi de um antigo carrinho de brinquedo, aproveitando seus eixos de roda e seu interruptor para ligá-lo e desligá-lo.
-O motor DC é colocado na parte de trás do carrinho e conectado ao eixo traseiro através de um sistema de engrenagens, já o servo motor é responsável pela movimentação direcional do eixo dianteiro.
-O motor DC está conectado nos terminais do motor B do driver.
-O driver ponte H Está sendo alimentado através de uma bateria 9V ligada a seus terminais VCC (que aceita tensões entre 6V e 12V) e GND. Note que a bateria é a única fonte de alimentação da placa, não havendo uma fonte de alimentação de 5V independente para o circuito interno da mesma, portanto o jumper 5V (localizado próximo aos terminais do motor A na placa) deve ser mantido.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O sistema foi montado por cima da base do chassi de um antigo carrinho de brinquedo, aproveitando seus eixos de roda e seu interruptor para ligá-lo e desligá-lo.O motor DC é colocado na parte de trás do carrinho e conectado ao eixo traseiro através de um sistema de engrenagens, já o servo motor é responsável pela movimentação direcional do eixo dianteiro.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O motor DC está conectado nos terminais do motor B do driver. O driver ponte H Está sendo alimentado através de uma bateria 9V ligada a seus terminais VCC (que aceita tensões entre 6V e 12V) e GND. Note que a bateria é a única fonte de alimentação da placa, não havendo uma fonte de alimentação de 5V independente para o circuito interno da mesma, portanto o jumper 5V (localizado próximo aos terminais do motor A na placa) deve ser mantido.
 O servomotor foi posicionado de forma que sua rotação movimente a haste responsável pela rotação das rodas dianteiras, empurrando um pino no centro dessa haste para a esquerda ou direita. É importante que o posicionamento do servo seja preciso, de forma que consiga movimentar a haste uma boa distância para ambos os lados.
 Há outras formas de implementar a rotação do eixo dianteiro, como por exemplo acoplar um trilho dentado à haste e uma engrenagem ao eixo do servo, porém essa foi escolhida pois se mostrou mais simples.
 A placa ESP foi conectada ao driver dos motores e ao servomotor. Sua alimentação é feita através de sua entrada USB-C, conectada a uma fonte USB portátil, e seu pino GND é foi conectado ao negativo da bateria para que ambas as placas tivessem a mesma referência de tensão.
