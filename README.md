@@ -25,7 +25,7 @@ Universidade Federal do Espírito Santo (UFES)
 **1. Esquemático e explicação das conexões**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Abaixo temos as conexões realizadas para montar o carrinho. O motor CC/DC é conectado ao driver e utilizado para movimentar o carrinho para frente ou para trás. Os pinos de input (IN1, IN2, IN3, IN4) do driver são conectados aos pinos digitais do ESP e são utilizados para determinar as direções de movimento dos motores CC/DC. Já os pinos ENABLE (ENA, ENB) são conectados aos pinos PWM do ESP para controlar a velocidade de rotação dos motores. Nosso projeto utiliza apenas um motor CC, controlado pela interface do motor B do driver (IN3, IN4, ENB). Por outro lado, o servo motor foi conectado a um pino PWM do ESP, de modo que é possível controlar a angulação das rodas através de um pivô.  
 
-
+!(esquemático.png)
 
 **2. Montagem física**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O sistema foi montado por cima da base do chassi de um antigo carrinho de brinquedo, aproveitando seus eixos de roda e seu interruptor para ligá-lo e desligá-lo.O motor DC é colocado na parte de trás do carrinho e conectado ao eixo traseiro através de um sistema de engrenagens, já o servo motor é responsável pela movimentação direcional do eixo dianteiro.
