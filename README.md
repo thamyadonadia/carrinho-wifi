@@ -4,7 +4,7 @@ Mostra Projeto Integrador em Computação I - 2021.2
 Universidade Federal do Espírito Santo (UFES) 
 
 ## Descrição do projeto 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Carrinho de controle remoto, utilizando o módulo Wi-Fi da placa ESP8266 e operado por uma aplicação web voltada para dispositivos móveis. 
 
 ## Materiais utilizados 
 **1. Componentes para a montagem física**
