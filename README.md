@@ -56,3 +56,4 @@ Além disso, foi instalada as bibliotecas ```Servo.h```, para facilitar o contro
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O servidor é então iniciado e o ESP passa a funcionar como um ponto de acesso Wi-Fi. Ao conectar um dispositivo à rede do ESP e acessar o seu endereço IP local (definido no código por padrão como 192.168.4.1) através de um navegador de internet, este exibirá uma página com 6 botões que, quando pressionados, farão requisições nos respectivos endereços para enviar comandos ao carrinho.
 
 ## Vídeo do projeto 
+https://youtu.be/Ti-WTbDdaL0
